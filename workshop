@@ -1,1 +1,30 @@
+Unit Tests:
+1. "multiplication"
+	• Expect multiplication(5, 4) to be equal to 20
+	• Expect multiplication(5, 3) to be a number
+	• Expect multiplication(5, 3) to be equal to 15
+	• Expect multiplication(5, 0) to be equal to 0 
+	• Expect multiplication(5, -4) to be equal to -20
+	• Expect multiplication(5, "b") to be an error
 
+2. "concatOdds"
+	• Expect concatOdds([3, 2, 1], [8, 3, 21, -5, 6, 3, 9]) to be [-5, 1, 3, 9, 21]
+	• Expect concatOdds([7, 5], [5, 9, 7]) to be [5, 7, 9]
+	• Expect concatOdds([4, 2, 6], [10, 6, 2, 8, 2]) to be [] (no odds)
+	• Expect concatOdds([2, 3, 12], 1) to be an error
+	• Expect concatOdds(true, [7, 1]) to be an error
+	• Expect concatOdds([], []) to be []
+
+
+Functional Tests:
+1. "shopping cart"
+	• When the user clicks "checkout", they should be asked to log in, sign up or "proceed as guest".
+	• When the user clicks "checkout" and the cart is empty, they should be shown the message "your cart is empty" and a list of suggested items to add directly to their cart.
+	• When the user clicks "proceed as guest", they should be asked to log in or sign up after checkout.
+	• When the user clicks "log in" but has not filled any information, they should be shown an error indicating there are missing fields to complete along with a prompt to sign up if they have not yet.
+	• When the user logs in, they should be taken to payment information directly.
+	• When the user clicks "sign up" without filling out the information, they should be shown an error.
+	• When the user signs up, they should be taken to payment information directly.
+	• When the user enters inaccurate payment information, they should be shown an error asking to review the information provided.
+	• When the user enters accurate payment information, they should be shown a summary and asked to review and confirm purchase.
+	• When the user proceeds with payment, they should be shown an order confirmation message.
